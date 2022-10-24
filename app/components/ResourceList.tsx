@@ -14,11 +14,13 @@ export const ResourceList = forwardRef<HTMLDivElement, ResourceListProps>(({ cla
 });
 
 interface ResourcePreviewProps extends ComponentPropsWithoutRef<'div'> {}
-export const ResourcePreview = forwardRef<HTMLDivElement, ResourcePreviewProps>(({ className, ...props}, ref) => {
+export const ResourcePreview = forwardRef<HTMLDivElement, ResourcePreviewProps>(({ className, children, ...props}, ref) => {
 	return (
-		<Link to="/resource/edition">
-			<div ref={ref} {...props} className={classNames('ResourcePreview', className)} />
-		</Link>
+		<div ref={ref} {...props} className={classNames('ResourcePreview', className)}>
+			<Link to="/resource/edition">
+				{children}
+			</Link>
+		</div>
 	)
 });
 
