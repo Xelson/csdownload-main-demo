@@ -6,17 +6,20 @@ import { forwardRef, ComponentPropsWithoutRef } from "react";
 import { classNames } from "~/helpers/attributes";
 import { Icon } from "./Icon";
 import { DraggbleContainer } from "./Draggable";
+import { Link } from "@remix-run/react";
 
 interface ResourceListProps extends ComponentPropsWithoutRef<'div'> {}
-export const ResourceList = forwardRef<HTMLDivElement, ResourceListProps>((props, ref) => {
-	const { className } = props;
+export const ResourceList = forwardRef<HTMLDivElement, ResourceListProps>(({ className, ...props}, ref) => {
 	return <div ref={ref} {...props} className={classNames('ResourceList', className)}></div>;
 });
 
 interface ResourcePreviewProps extends ComponentPropsWithoutRef<'div'> {}
-export const ResourcePreview = forwardRef<HTMLDivElement, ResourcePreviewProps>((props, ref) => {
-	const { className } = props;
-	return <div ref={ref} {...props} className={classNames('ResourcePreview', className)}></div>;
+export const ResourcePreview = forwardRef<HTMLDivElement, ResourcePreviewProps>(({ className, ...props}, ref) => {
+	return (
+		<Link to="/resource/edition">
+			<div ref={ref} {...props} className={classNames('ResourcePreview', className)} />
+		</Link>
+	)
 });
 
 export function ResourceFilterBar({children}: React.PropsWithChildren<{}>) {
