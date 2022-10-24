@@ -1,0 +1,35 @@
+.Background__Articles {
+	background-image: url("/img/main/bg-03.jpg");
+}
+
+.ResourceList__Articles {
+	.Previews {
+		.ResourcePreview {
+			flex: 1 0 48%;
+		}
+	}
+}
+
+.ResourcePreview__Article {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+	
+	.Image {
+		height: 300px;
+	}
+
+	.Meta {
+		flex-direction: column;
+		align-items: start;
+		gap: 10px;
+
+		h1 {
+			font-size: 24px;
+		}
+
+		span {
+			color: $white-50;
+		}
+	}
+}

@@ -1,0 +1,112 @@
+.Input {
+	min-width: 200px;
+	height: 30px;
+	border-radius: 15px;
+	padding: 0 10px;
+	background: $white-input-10;
+	color: $white-text-30;
+
+	display: flex;
+	align-items: center;
+	gap: 6px;
+
+	transition: color 100ms ease-out;
+
+	&:hover, &:focus-within {
+		color: #FFF;
+
+		input:focus {
+			color: #FFF;
+		}
+	}
+
+	input {
+		width: 100%
+	}
+}
+
+.Dropdown {
+	position: relative;
+
+	& > .Content {
+		top: 0;
+		position: absolute;
+		background: $white-input-10;
+		border-radius: 15px;
+		backdrop-filter: blur(20px);
+		padding-top: 30px;
+		padding-bottom: 10px;
+		z-index: -1;
+		width: 100%;
+		font-weight: 450;
+		
+		.Item {
+			padding-top: 10px;
+			cursor: pointer;
+
+			&:hover {
+				color: $white-link-30;
+			}
+		}
+	}
+}
+
+.Dropdown__Select {
+	z-index: 1;
+
+	button {
+		padding: 0px 10px;
+		border-radius: 15px;
+		width: 200px;
+		background: $white-input-10;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		& > [data-icon] {
+			color: $white-text-30;
+		}
+
+		&:hover, &[data-active="true"] {
+			background: $white-input-30;
+			& > * {
+				color: #FFF;
+			}
+		}
+	}
+
+	.Content {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.Paginator {
+	display: flex;
+	align-items: center;
+	gap: 5px;
+
+	& > * {
+		width: 30px;
+		height: 30px;
+		border-radius: 30px;
+		text-align: center;
+		line-height: 30px;
+
+		cursor: pointer;
+
+		&:hover {
+			background: $white-input-10;
+		}
+
+		&[data-active="true"] {
+			background: $white-input-30;
+		}
+
+		[data-icon] {
+			position: relative;
+			top: 3px;
+		}
+	}
+}

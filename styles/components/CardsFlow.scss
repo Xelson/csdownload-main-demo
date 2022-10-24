@@ -1,0 +1,27 @@
+.CardsFlow {
+	& > * {
+		margin-bottom: -30px;
+		position: relative;
+
+		@for $i from 0 through 6 {
+			&:nth-child(#{$i}n) {
+				background-color: lighten($black-94, $i * 1%);
+			}
+		}
+	}
+}
+
+.CardsFlow__rightAlign {
+	position: relative;
+	right: 0;
+	
+	& > * {
+		margin-left: auto;
+	}
+}
+
+.CardsFlow__fullWidth {
+	& > * {
+		width: 100%;
+	}
+}

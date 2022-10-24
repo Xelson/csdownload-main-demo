@@ -1,0 +1,30 @@
+@import "fonts.scss";
+
+@import "mixins";
+@import "colors";
+@import "reset";
+@import "defaults";
+
+@import "components/index.scss";
+
+.Root {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+
+  .PageContent {
+    position: relative;
+    width: 100%;
+    margin-top: 100px;
+  }
+}
+
+:root {
+  @include font-default;
+  background: $black-94;
+  margin: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include font-headers;
+}

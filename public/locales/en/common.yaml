@@ -1,0 +1,107 @@
+header:
+    editions: Editions
+    files: Files
+    servers: Servers
+    articles: Articles
+    search:
+        placeholder: Search
+    roulette:
+        button_spin: Spin
+        button_open: Open Edition
+
+resource:
+    list:
+        header:
+            show_all: Show All
+        button_showmore: Show More
+
+    sidebar:
+        quicklinks:
+            download: Download
+            description: Description
+            comments: Comments
+            information: Information
+            discover: Discover
+
+    edition:
+        title: CS 1.6 Editions
+        title_main: Editions
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+        button_download: Download
+        link_virustotal: Checked on Virustotal!
+        dropdown_download:
+            link_direct: Direct Link
+            link_torrent: Torrent File
+            link_yandex: Yandex Disk
+            link_mailru: Cloud Mail
+
+    file:
+        title: CS 1.6 Files
+        title_main: Files
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    article:
+        title: CS 1.6 Articles
+        title_main: Articles
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    server:
+        title: CS 1.6 Servers
+        title_main: Servers
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    card:
+        description:
+            title: Description
+            button_showmore: Show more
+            button_showless: Show less
+        information:
+            title: Information
+            text_rate: Please rate this resource
+        comments:
+            title: Comments
+            button_reply: Reply
+            button_reply_cancel: Cancel
+            replies: "{{count}} replies"
+            replies_one: "{{count}} reply"
+            replies_other: "{{count}} replies"
+            placeholder_message: Write a message...
+            placeholder_username: Write your username
+        discover:
+            title: Discover
+
+about:
+    title: About
+    paragraph1: >
+        Counter-Strike: Global Offensive (CS:GO) expands upon the team-based first person shooter gameplay the original 
+        Counter-Strike pioneered when it launched in 1999. Two teams compete in multiple rounds of objective-based game modes 
+        with the goal of winning enough rounds to win the match. 
+    paragraph2: >
+        CS:GO features new maps, characters, and weapons and delivers 
+        updated versions of the classic Counter-Strike maps like Dust, Inferno, Nuke, Train, and more. In addition, CS:GO 
+        introduces new game modes like Arms Race, Flying Scoutsman and Wingman, and features online matchmaking and Competitive Skill Groups. 
+        This is the classic game mode that put Counter-Strike on the map. Two teams of five compete in a best-of-30 match using standard competitive 
+        Counter-Strike rules. Players must purchase armor, weapons, defuse or rescue kits, and manage their in-game economy to maximize their 
+        chance of success. The first team to win 16 rounds in either Bomb Defusal or Hostage Rescue game modes wins the match. Competitive offers 
+        unique Skill Groups players can earn and display, beginning with Silver 1 and progressing up to The Global Elite. Join a match on 
+        your own or form a team and queue for a match together!
+
+footer:
+    logo:
+        text: The largest source of editions, files, servers and articles for the Counter Strike 1.6 game.
+
+    legal:
+        part1: 2022 © Designed by Anymark.
+        part2: All product names, logos, brands, trademarks and registered trademarks are property of their respective owners.

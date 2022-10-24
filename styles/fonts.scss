@@ -1,0 +1,15 @@
+@import "fonts/ttnormspro/index";
+@import "fonts/ttnormspro-expanded/index";
+
+@mixin font-default {
+	font-family: TT Norms Pro;
+	font-weight: 400;
+	font-size: 16px;
+
+	color: #FFF;
+}
+
+@mixin font-headers {
+	font-family: TT Norms Pro Expanded;
+	color: #FFF;
+}

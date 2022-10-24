@@ -1,0 +1,80 @@
+.Background__Servers {
+	background-image: url("/img/main/bg-01.jpg");
+}
+
+.ResourceList__Servers {
+
+}
+
+.List__Servers {
+	display: table;
+	font-weight: 400;
+
+	.Item {
+		display: table-row;
+		color: #FFF;
+		height: 40px;
+		border-radius: 10px;
+
+		&:nth-child(odd) {
+			& > * {
+				background: $black-94;
+				
+				&:first-child {
+					border-radius: 10px 0 0 10px;
+				}
+
+				&:last-child {
+					border-radius: 0 10px 10px 0;
+				}
+			}
+		}
+
+		& > * {
+			display: table-cell;
+			vertical-align: middle;
+			line-height: 40px;
+			text-align: right;
+		}
+
+		& > div {
+			padding: 0 10px;
+		}
+
+		.Number {
+			width: 55px;
+			text-align: center; 
+		}
+
+		.Hostname, .Map {
+			text-align: left;
+		}
+
+		.Address {
+			width: 190px;
+
+			[data-icon] {
+				margin-right: 5px;
+				position: relative;
+				top: 5px;
+			}
+		}
+
+		.Online, .Map {
+			width: 0;
+		}
+
+		.Number, .Online, .Map {
+			color: $white-text-30;
+		}
+
+		.Tag {
+			padding: 1px 10px;
+		}
+
+		.MapImage {
+			width: 70px;
+			background-size: 100%;
+		}
+	}
+}

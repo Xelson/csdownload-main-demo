@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Bold'), local('TT Norms Pro Trial Expanded Bold'),
+        url('../../fonts/TT Norms Pro Trial Expanded Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraBold Italic'), local('TT Norms Pro Trial Expanded ExtraBoldItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraBold Italic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraLight Italic'), local('TT Norms Pro Trial Expanded ExtraLightItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraLight Italic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Thin'), local('TT Norms Pro Trial Expanded Thin'),
+        url('../../fonts/TT Norms Pro Trial Expanded Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraBold'), local('TT Norms Pro Trial Expanded ExtraBold'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Regular'), local('TT Norms Pro Trial Expanded Regular'),
+        url('../../fonts/TT Norms Pro Trial Expanded Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Thin Italic'), local('TT Norms Pro Trial Expanded ThinItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded Thin Italic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Light'), local('TT Norms Pro Trial Expanded Light'),
+        url('../../fonts/TT Norms Pro Trial Expanded Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Medium Italic'), local('TT Norms Pro Trial Expanded MediumItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded Medium Italic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraBlack Italic'), local('TT Norms Pro Trial Expanded ExtraBlackItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraBlack Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraLight'), local('TT Norms Pro Trial Expanded ExtraLight'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Light Italic'), local('TT Norms Pro Trial Expanded LightItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Medium'), local('TT Norms Pro Trial Expanded Medium'),
+        url('../../fonts/TT Norms Pro Trial Expanded Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded ExtraBlack'), local('TT Norms Pro Trial Expanded ExtraBlack'),
+        url('../../fonts/TT Norms Pro Trial Expanded ExtraBlack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Bold Italic'), local('TT Norms Pro Trial Expanded BoldItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded Bold Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Black Italic'), local('TT Norms Pro Trial Expanded BlackItalic'),
+        url('../../fonts/TT Norms Pro Trial Expanded Black Italic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Black'), local('TT Norms Pro Trial Expanded Black'),
+        url('../../fonts/TT Norms Pro Trial Expanded Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TT Norms Pro Expanded';
+    src: local('TT Norms Pro Expanded Italic'), local('TT Norms Pro Trial Expanded Italic'),
+        url('../../fonts/TT Norms Pro Trial Expanded Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+

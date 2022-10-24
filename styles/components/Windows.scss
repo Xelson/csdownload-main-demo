@@ -1,0 +1,59 @@
+.Window {
+	position: fixed;
+	width: 600px;
+	border-radius: 50px;
+	z-index: 10;
+	right: 20px;
+	bottom: 20px;
+	padding: 30px;
+
+	@include material;
+	background: $black-90;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	h2 {
+		font-weight: 400;
+	}
+
+	& > .Button__Close {
+		position: absolute;
+		right: 30px;
+
+		width: 30px;
+		height: 30px;
+
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+	}
+
+	.Footer {
+		display: flex;
+		gap: 10px;
+		justify-content: end;
+		padding-top: 20px;
+
+		button {
+			height: 40px;
+			padding: 10px 30px;
+		}
+
+		.Button__DontShowAgain {
+			@include button-white;
+		}
+
+		.Button__Close {
+			@include button-green;
+		}
+	}
+
+	transition: all 100ms ease-out;
+
+	&[data-hidden="true"] {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

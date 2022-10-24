@@ -1,0 +1,57 @@
+.FilterCircle {
+	color: #FFF;
+	width: 100px;
+
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	cursor: pointer;
+
+	position: relative;
+    z-index: 1;
+
+	.Preview {
+		width: 100px;
+		height: 100px;
+		
+		border-radius: 50px;
+		background-color: #626262;
+		background-size: 200%;
+		background-position: 50%;
+		position: relative;
+
+		&::after {
+			@include material;
+			content: "";
+			position: absolute;
+			z-index: -1;
+
+			top: -3px;
+			bottom: -3px;
+			left: -3px;
+			right: -3px;
+			border-radius: 50px;
+			background-color: $white-input-10;
+		}
+
+		&[data-active="true"]::after {
+			background-image: rainbow-gradient(to top);
+		}
+	}
+
+	.BottomPanel {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 5px;
+
+		& > *:nth-child(2n) {
+			color: $white-text-30;
+		}
+	}
+
+	&:hover {
+		opacity: 0.8;
+	}
+}

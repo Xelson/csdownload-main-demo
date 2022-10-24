@@ -1,0 +1,181 @@
+.Logo {
+	@include user-select(none);
+	cursor: pointer;
+	height: 20px;
+	
+	img {
+		height: 20px;
+	}
+}
+
+
+.ContentCard {
+	@include material;
+
+	color: #FFF;
+	width: 1200px;
+	min-height: 200px;
+	border-radius: 50px;
+	padding: 30px;
+	padding-bottom: 60px;
+	background: $black-94;
+
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.ContentCard__PageHeader {
+	background-image: url("/img/main/bg-01.jpg");
+	background-size: 100%;
+	background-position: 50%;
+
+	p {
+		max-width: 450px;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+
+	.Categories {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+}
+
+.ContentCard__About {
+	p {
+		color: $white-text-30;
+		font-weight: 300;
+	}
+}
+
+.Tag {
+	@include user-select(none);
+	cursor: pointer;
+	display: inline;
+	
+	white-space: nowrap;
+	padding: 6px 12px;
+	background: $white-input-10;
+	border-radius: 10px;
+
+	transition: background-color 100ms ease-out;
+
+	&:hover, &[data-active] {
+		background: $white-input-30;
+	}
+}
+
+.DraggableContainer {
+	display: flex;
+	gap: 10px;
+	overflow: hidden;
+
+	& > * {
+		border-radius: 10px;
+	}
+}
+
+.ModalOpened {
+
+}
+
+.ModalPortal {
+	.ReactModal__Overlay {
+		z-index: 11;
+		background: rgba(0, 0, 0, 0.7) !important;
+
+		.Content {
+			max-width: 1000px;
+			width: 100%;
+			margin: auto;
+			margin-top: 100px;
+			border: none !important;
+			outline: none;
+			position: relative;
+
+			.Button__Close {
+				width: 30px;
+				height: 30px;
+				border-radius: 30px;
+				color: #FFF;
+				cursor: pointer;
+		 
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+		
+				position: absolute;
+				right: -30px;
+				top: -30px;
+
+				&:hover {
+					background-color: $white-input-10;
+				}
+			}
+		}
+	}
+
+	.ReactModal__Overlay {
+		opacity: 0;
+		transition: opacity 100ms ease-in-out;
+	}
+	
+	.ReactModal__Overlay--after-open{
+		opacity: 1;
+	}
+	
+	.ReactModal__Overlay--before-close{
+		opacity: 0;
+	}
+}
+
+.Carousel {
+	img {
+		height: 100%;
+    	object-fit: cover;
+	}
+
+	.slider-wrapper {
+		border-radius: 10px;
+
+		&.swipping {
+			cursor: grabbing;
+		}
+	}
+
+	.thumbs-wrapper {
+		margin: 0;
+		margin-top: 5px;
+
+		.thumbs {
+			padding: 5px 2px;
+			cursor: pointer;
+
+			.thumb {
+				padding: 0;
+				border: none;
+				border-radius: 10px;
+				height: 80px;
+
+				&.selected {
+					outline: 2px solid #FFF;
+				}
+				
+			}
+		}
+	}
+}
+
+.Button__AutoScroll {
+	@include button-black;
+
+	position: fixed;
+	bottom: 50px;
+	right: 50px;
+
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}

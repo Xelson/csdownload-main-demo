@@ -1,0 +1,22 @@
+.Breadcrumb {
+	color: white;
+
+	& > * {
+		display: inline;
+
+		&[data-active], &[data-active="true"] {
+			color: $white-link-30;
+		}
+	}
+
+	span {
+		color: $white-link-10;
+		padding: 0 5px;
+	}
+}	
+
+.StickyBar {
+	position: absolute;
+	width: 150px;
+	right: 0;
+}

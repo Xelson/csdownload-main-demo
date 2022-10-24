@@ -1,0 +1,213 @@
+.MainHeader {
+	position: absolute;
+	width: 100%;
+	min-height: 60px;
+	border-radius: 10px;
+	background: $black-94t;
+	font-weight: 450;
+
+	box-shadow: inset 0px 0px 2px rgba(255, 255, 255, 0.15);
+	filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.1));
+	backdrop-filter: blur(50px);
+
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 15px;
+	gap: 15px 50px; 
+
+	.Interaction {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 15px 50px; 
+		
+		nav {
+			display: flex;
+			gap: 30px;
+			
+			a {
+				transition: color 100ms ease-out;
+			}
+	
+			a:hover, a:focus {
+				color: $white-link-30;
+			}
+		}
+	
+		.Dropdown__SearchBar {
+			font-weight: 400;
+			position: absolute;
+			right: 133px;
+		}
+
+		.Dropdown__flag {
+			position: absolute;
+			right: 50px;
+		}
+
+		.Button__roulette {
+			position: absolute;
+			right: 15px;
+		}
+	}
+}
+
+.Dropdown__rullete {
+    position: fixed;
+    max-width: 1460px;
+    width: 100%;
+	z-index: 10;
+	top: 10px;
+
+	& > .Content {
+		padding: 0;
+		position: absolute;
+		top: 70px;
+		height: 150px;
+		backdrop-filter: none;
+		background: $black-94t;
+		backdrop-filter: blur(25px);
+	}
+
+	& > * {
+		right: 20px !important;
+    	width: calc(100% - 20px) !important;
+	}
+}
+
+.Dropdown__flag {
+	width: 70px;
+
+	button {
+		width: 70px;
+	}
+
+	.Item {
+		display: flex;
+		align-items: center;
+		padding: 0 8px;
+		gap: 5px;
+	}
+}
+
+.Dropdown__SearchBar {
+	.Content {
+		padding: 15px;
+		padding-top: 30px;
+	}
+
+	.Item {
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+}
+
+.Roulette {
+	position: relative;
+	height: 150px;
+
+	.Items {
+		display: flex;
+		gap: 10px;
+		overflow: hidden;
+
+		.Item {
+			@include user-select(none);
+			
+			img {
+				max-height: 130px;
+				cursor: default;
+			}
+		}
+	}
+
+	.Button__spin {
+		@include button-white;
+		@include font-headers;
+
+		position: absolute;
+		backdrop-filter: blur(50px);
+		border-radius: 25px;
+		font-size: 24px;
+		padding: 10px 30px;
+
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%) scale(2);
+		zoom: 0.5;
+		cursor: pointer;
+	}
+
+	.AimLine {
+		background-color: $white-94t;
+		border-radius: 10px;
+		position: absolute;
+		top: 0;
+		left: calc(50% - 2.5px);
+
+		width: 5px;
+		height: 100%;
+	}
+
+	.Results {
+		position: absolute;
+		width: 200px;
+		top: 0;
+		left: calc(50% - 100px);
+		height: 100%;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+
+		.Button__spin {
+			position: static;
+			transform: none;
+			zoom: normal;
+			
+			font-size: 16px;
+			width: 170px;
+		}
+
+		.Button__open {
+			@include font-headers;
+			@include button-green;
+
+			line-height: 1.0;
+			font-size: 16px;
+			width: 170px;
+			height: 45px;
+
+			span {
+				font-size: 12px;
+			}
+		}
+	}
+}
+
+.Button__flag {
+    display: flex;
+    align-items: center;
+	gap: 5px;
+	padding: 0 8px;
+
+	&[data-active="true"] {
+		background-color: $white-input-30;
+	}
+}
+
+.Button__roulette {
+	color: $white-icon-30;
+	display: flex;
+    align-items: center;
+	
+	&:hover, &[data-active="true"] {
+		color: #FFF;
+		background-color: $white-input-30;
+	}
+}

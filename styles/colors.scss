@@ -1,0 +1,80 @@
+$black-10: rgba(0, 0, 0, 0.1);
+$black-30: rgba(0, 0, 0, 0.3);
+$black-96: #0A0A0A;
+$black-94: #0F0F0F;
+$black-92: #141414;
+$black-90: #191919;
+$black-88: #1F1F1F;
+$black-86: #242424;
+$black-84: #292929;
+
+$black-96t: #0A0A0AE6;
+$black-94t: #0F0F0FE6;
+$black-92t: #141414E6;
+$black-90t: #191919E6;
+$black-88t: #1F1F1FE6;
+$black-86t: #242424E6;
+$black-84t: #292929E6;
+
+$white-94t: rgba(240, 240, 240, 0.9);
+
+$white-10: rgba(255, 255, 255, 0.1);
+$white-30: rgba(255, 255, 255, 0.3);
+$white-50: rgba(255, 255, 255, 0.5);
+
+$white-button-80: rgba(230, 230, 230, 0.1);
+$white-button-90: rgba(230, 230, 230, 0.2);
+$white-button-100: rgba(255, 255, 255, 0.3);
+
+$white-text-30: rgba(255, 255, 255, 0.3);
+$white-link-10: rgba(255, 255, 255, 0.1);
+$white-link-30: rgba(255, 255, 255, 0.3);
+$white-icon-30: rgba(255, 255, 255, 0.3);
+$white-input-10: rgba(255, 255, 255, 0.1);
+$white-input-30: rgba(255, 255, 255, 0.3);
+
+$green-button-100: #C1ED4B;
+$green-button-80: #9ABE3C;
+$green-button-70: #87A635;
+
+@mixin button-green() {
+	color: #000;
+	background: $green-button-100;
+
+	&:hover {
+		background: $green-button-80;
+	}
+
+	&:active, &[data-active="true"] {
+		background: $green-button-70;
+	}
+}
+
+@mixin button-white() {
+	background: $white-button-100;
+
+	&:hover {
+		background: $white-button-90;
+	}
+
+	&:active, &[data-active="true"]  {
+		background: $white-button-80;
+	}
+}
+
+@mixin button-black {
+	color: #FFF;
+	background: $black-88t;
+
+	&:hover {
+		background: $black-86t;
+	}
+
+	&:active, &[data-active="true"]  {
+		background: $black-84t;
+	}
+}
+
+@function rainbow-gradient($direction) {
+	@return linear-gradient($direction, #FFB60C, #57ECC0, #DB00FF);
+}

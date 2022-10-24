@@ -1,0 +1,109 @@
+header:
+    editions: Сборки
+    files: Файлы
+    servers: Сервера
+    articles: Статьи
+    search:
+        placeholder: Поиск
+    roulette:
+        button_spin: Крутить
+        button_open: Открыть сборку
+
+resource:
+    list:
+        header:
+            show_all: Показать всё
+        button_showmore: Показать еще
+
+    sidebar:
+        quicklinks:
+            download: Скачать
+            description: Описание
+            comments: Комментарии
+            information: Информация
+            discover: Другое
+
+    edition:
+        title: CS 1.6 Сборки
+        title_main: Сборки
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+        button_download: Скачать
+        link_virustotal: Проверено на Virustotal!
+        dropdown_download:
+            link_direct: Прямая ссылка
+            link_torrent: Торрент
+            link_yandex: Яндекс Диск
+            link_mailru: Облако Mail.ru
+
+    file:
+        title: CS 1.6 Файлы
+        title_main: Файлы
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    article:
+        title: CS 1.6 Статьи
+        title_main: Статьи
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    server:
+        title: CS 1.6 Сервера
+        title_main: Сервера
+        description: >-
+            This edition of the game has all classic elements of this FPS which 
+            we all love so much: original pre-steam player models, all standard 
+            weapon skins, maps we love and so much more.
+
+    card:
+        description:
+            title: Описание
+            button_showmore: Показать ещё
+            button_showless: Скрыть
+        information:
+            title: Информация
+            text_rate: Пожалуйста, оцените этот ресурс
+        comments:
+            title: Комментарии
+            button_reply: Ответить
+            button_reply_cancel: Отменить
+            replies: "{{count}} ответов"
+            replies_one: "{{count}} ответ"
+            replies_two: "{{count}} ответа"
+            replies_few: "{{count}} ответа"
+            replies_other: "{{count}} ответов"
+            placeholder_message: Введите сообщение...
+            placeholder_username: Введите ваш никнейм
+        discover:
+            title: Другое
+
+about:
+    title: Об игре
+    paragraph1: >
+        Counter-Strike: Global Offensive (CS:GO) expands upon the team-based first person shooter gameplay the original 
+        Counter-Strike pioneered when it launched in 1999. Two teams compete in multiple rounds of objective-based game modes 
+        with the goal of winning enough rounds to win the match. 
+    paragraph2: >
+        CS:GO features new maps, characters, and weapons and delivers 
+        updated versions of the classic Counter-Strike maps like Dust, Inferno, Nuke, Train, and more. In addition, CS:GO 
+        introduces new game modes like Arms Race, Flying Scoutsman and Wingman, and features online matchmaking and Competitive Skill Groups. 
+        This is the classic game mode that put Counter-Strike on the map. Two teams of five compete in a best-of-30 match using standard competitive 
+        Counter-Strike rules. Players must purchase armor, weapons, defuse or rescue kits, and manage their in-game economy to maximize their 
+        chance of success. The first team to win 16 rounds in either Bomb Defusal or Hostage Rescue game modes wins the match. Competitive offers 
+        unique Skill Groups players can earn and display, beginning with Silver 1 and progressing up to The Global Elite. Join a match on 
+        your own or form a team and queue for a match together!
+
+footer:
+    logo:
+        text: Крупнеший источник сборок, файлов и статьей для игры Counter Strike 1.6 
+
+    legal:
+        part1: 2022 © Разработан Anymark.
+        part2: Все названия продуктов, логотипы, бренды, товарные знаки и зарегистрированные товарные знаки являются собственностью их соответствующих владельцев

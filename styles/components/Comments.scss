@@ -1,0 +1,211 @@
+.CommentAvatar {
+	width: 30px;
+	height: 30px;
+	border-radius: 30px;
+	background-size: 110%;
+    background-position: 50%;
+	transition: all 100ms ease-out;
+}
+
+.Comment {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	a {
+		@include user-select(none);
+		cursor: pointer;
+		font-weight: 500;
+		display: flex;
+		align-items: center;
+		gap: 5px;
+	}
+
+	.Username {
+		font-weight: 500;
+	}
+
+	.Post {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		.Header {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			cursor: default;
+
+			time {
+				color: $white-text-30;
+			}
+		}
+
+		.Header__isAdmin {
+			padding-top: 2px;
+			position: relative;
+			z-index: 1;
+			
+			.CommentAvatar {
+				position: relative;
+
+				&::after {
+					content: "";
+					position: absolute;
+					z-index: -1;
+		
+					top: -2px;
+					bottom: -2px;
+					left: -2px;
+					right: -2px;
+					border-radius: 50px;
+					background-image: rainbow-gradient(to top);
+				}
+			}
+
+			.Username {
+				background-image: rainbow-gradient(to right);
+				-webkit-background-clip: text;
+				color: transparent;
+				font-weight: 600;
+			}
+		}
+
+		.Content {
+			font-weight: 350;
+		}
+
+		.Footer {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+
+			.LikesPanel {
+				cursor: default;
+				display: flex;
+				align-items: center;
+				gap: 5px;
+				
+				color: $white-text-30;
+
+				[data-icon] {
+					cursor: pointer;
+				}
+			}
+		}
+	}
+
+	.Replies {
+		margin-left: 15px;
+		display: flex;
+		flex-direction: column;
+
+		& > .List {
+			& > * {
+				border-left: 3px solid $white-text-30;
+				padding: 5px 15px;
+			}
+			opacity: 0;
+			transition: all 100ms ease-out;
+			height: 0;
+			overflow: hidden;
+			visibility: hidden;
+		}
+
+		&[data-opened="true"] {
+			& > .List {
+				opacity: 1;
+				height: 100%;
+				visibility: visible;
+				margin-top: 10px;
+			}
+		}
+	}
+
+	.CommentWriter {
+		&[data-opened="true"] {
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.Comment__downVoted {
+	& > .Post {
+		opacity: 0.25;
+	}
+}
+
+.CommentTree {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.CommentWriter__defaultHidden {
+	opacity: 0;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+.CommentWriter {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+	transition: all 100ms ease-out;
+
+	&[data-opened="true"] {
+		opacity: 1;
+		height: 100%;
+		visibility: visible;
+	}
+
+	& > .InputPanel {
+		position: relative;
+		flex-grow: 1;
+		flex-basis: 48%;
+
+		input { 
+			padding-right: 30px;
+		}
+	}
+
+	.Button__Send {
+		position: absolute;
+		right: 0;
+		color: $white-icon-30;
+		width: 50px;
+		height: 30px;
+		top: 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		cursor: pointer;
+
+		&:hover {
+			color: #FFF;
+		}
+	}
+
+	.Dropdown__AvatarPicker {
+		position: absolute;
+
+		.CommentAvatar__Preview {
+			cursor: pointer;
+		}
+
+		.Content {
+			border-radius: 15px;
+			background: $white-input-10;
+			backdrop-filter: blur(10px);
+
+			display: flex;
+			flex-wrap: wrap;
+			gap: 5px;
+			padding: 5px;
+			z-index: 3;
+			top: 40px;
+			width: 180px;
+		}
+	}
+}
